@@ -1,0 +1,16 @@
+body.cabins .row {
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+body.cabins h2 {
+    margin-top: 0;
+}
+
+.datepicker {
+    width: 100% !important;
+    height: 165px !important;
+}

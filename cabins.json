@@ -1,0 +1,24 @@
+{
+  "cabins": [
+    {
+        "id": "1",
+        "name": "North Woods",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Erit enim mecum, si tecum erit. Polycratem Samium felicem appellabant. Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duo enim genera quae erant, fecit tria. Duo Reges: constructio interrete. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.",
+        "image": "cabin1.png",
+        "price": "199"
+    },
+    {
+        "id": "2",
+        "name": "Maple Harbor",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Erit enim mecum, si tecum erit. Polycratem Samium felicem appellabant. Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duo enim genera quae erant, fecit tria. Duo Reges: constructio interrete. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.",
+        "image": "cabin2.png",
+        "price": "249"
+    },
+    {
+        "id": "3",
+        "name": "Little Pond",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Negabat igitur ullam esse artem, quae ipsa a se proficisceretur; Erit enim mecum, si tecum erit. Polycratem Samium felicem appellabant. Nisi autem rerum natura perspecta erit, nullo modo poterimus sensuum iudicia defendere. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Duo enim genera quae erant, fecit tria. Duo Reges: constructio interrete. Quod idem cum vestri faciant, non satis magnam tribuunt inventoribus gratiam.",
+        "image": "cabin3.png",
+        "price": "299"
+    }
+]}
