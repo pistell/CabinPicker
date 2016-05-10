@@ -13,9 +13,86 @@ h4 {
 body.cabins h2 {
     margin-top: 0;
 }
+#nav-logo {
+    display: inline-block;
+    max-width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: #A21D4D;
+    border: 0;
+    border-radius: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-brand {
+    color: #FFF;
+    height: auto;
+    padding: 10px 20px;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-brand:hover {
+    color: #FFF;
+    background-color: #84183F;
+}
+.btn-primary {
+    background-color: #A21D4D;
+    border-radus: 0;
+    border: 0;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #84183F;
+}
+@media (min-width: 768px){
+    .navbar-nav>li>a {
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .datepicker {
     width: 100% !important;
     height: 165px !important;
+}
+#banner {
+    height: 500px;
+    background: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+#banner .logo {
+    max-width: 100px;
+}
+#banner h1, #banner p {
+    margin: 0 0 5px;
+}
+#banner .title-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    color: #FFF;
+    transform: translateY(-50%);
 }
 .carousel img {
     min-width: 100%;
@@ -102,12 +179,16 @@ div.showImage input {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-
 #footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
-    color: #777;
-    border-top: 1px solid #e7e7e7;
+    background-color: #A21D4D;
+    color: #FFF;
+}
+#footer-logo {
+    display: block;
+    max-width: 140px;
+    height: auto;
+    margin: 10px auto 20px;
 }
 
 /* Stupid pure CSS social Icons, Replace with font awesome */
@@ -116,10 +197,12 @@ div.showImage input {
     content: "";
 }
 .social__icon--instagram {
-    background-color: #6291b2;
+    background-color: #84183F;
 }
 .social__icon--instagram:hover {
-    background-color: #537b97;
+    background-color: #6B1333;
+    color: #FFF;
+    text-decoration: none;
 }
 .social__item {
     display: inline-block;
