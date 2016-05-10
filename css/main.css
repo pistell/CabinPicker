@@ -41,6 +41,7 @@ body.cabins h2 {
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+backface-visibility: hidden;
 }
 .event-img:hover{
   opacity: .7;
