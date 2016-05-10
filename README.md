@@ -6,5 +6,6 @@ James Pistell
 
 ## Libs used
 
-DatePicker from FoxRun Software
-http://foxrunsoftware.github.com/DatePicker/
++ [DatePicker from FoxRun Software](http://foxrunsoftware.github.com/DatePicker)
++ [jQuery](https://jquery.com)
++ [Bootstrap 3](http://getbootstrap.com)
