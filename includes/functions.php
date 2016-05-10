@@ -14,7 +14,7 @@ function get_cabin_data() {
     return $cabinDataObj;
 }
 
-function get_body_class() {
+function get_active_page() {
 
     // Dynamically set current page title as body class to target pages with CSS
     $basename = basename( $_SERVER['PHP_SELF'], ".php" );
