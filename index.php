@@ -12,7 +12,7 @@
    <div class="row">
       <div class="col-md-8">
           <!-- Include the cabin carousel -->
-          <?php require_once('includes/car2.php'); ?>
+          <?php require_once('includes/carousel.php'); ?>
       </div>
       <div class="col-md-4">
          <table class="table table-hover">
