@@ -86,6 +86,9 @@ body.cabins h2 {
 #banner h1, #banner p {
     margin: 0 0 5px;
 }
+#banner p {
+    font-size: 18px;
+}
 #banner .title-wrap {
     position: absolute;
     left: 0;
