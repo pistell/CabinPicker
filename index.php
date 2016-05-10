@@ -1,10 +1,12 @@
 <?php
-/* * Our Home Page */
+/*
+ * Our Home Page
+ */
 require_once( 'includes/header.php');
 require_once( 'includes/nav.php');
+
 ?>
-<div class="container">
-	<h1>Home</h1> </div>
+
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8">
@@ -113,37 +115,67 @@ require_once( 'includes/nav.php');
 
 		</div>
 		<div class="col-md-4">
-      <h3 class="bottomHeadlines text-center">
-            Contact
-         </h3>
-         <form action="contact.php" class="contactForm" method="post" accept-charset="utf-8">
-         <input type="text" name="name" value="" placeholder="Your Name" />
-         <input type="text" name="email" value="" placeholder="Your Email" />
-         <label class="guestLabel" for="numGuests">Guests</label>
-         <select class="select" name="numGuests" id="numGuests">
-           <option value="1">1</option>
-           <option value="2">2</option>
-           <option value="3">3</option>
-           <option value="4">4</option>
-           <option value="moreThan4">More than 4</option>
-         </select>
-         <textarea name="contactFormText" id="contactFormText" rows="8" cols="40"></textarea>
-         <input type="submit" name="submit" value="Submit form"  />
-       </form>
-       <div class="messageSuccess">
-       </div>
-			<h3 class="bottomHeadlines text-center">
-            About
-         </h3>
-         <p class="lead">
+            <h3 class="bottomHeadlines text-center">Contact</h3>
+
+            <form class="form-horizontal contactForm" action="contact.php" method="post" accept-charset="utf-8">
+                <fieldset>
+
+                    <!-- Name-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="contact-form-name">Name</label>
+                      <div class="col-md-6">
+                          <input id="contact-form-name" name="name" type="text" class="form-control input-md">
+                      </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="contact-form-email">Email</label>
+                      <div class="col-md-6">
+                          <input id="contact-form-email" name="email" type="text" class="form-control input-md">
+                      </div>
+                    </div>
+
+                    <!-- Number Of Guests -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="numGuests">Guests</label>
+                      <div class="col-md-6">
+                        <select name="numGuests" id="numGuests" class="form-control select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="moreThan4">More than 4</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="textarea">Message</label>
+                      <div class="col-md-6">
+                        <textarea class="form-control" name="contactFormText" id="contactFormText"></textarea>
+                      </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <div class="col-md-6 col-md-offset-4">
+                        <input type="submit" name="submit" class="btn btn-primary" value="Submit form">
+                      </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        <div class="messageSuccess"></div>
+		<h3 class="bottomHeadlines text-center">About</h3>
+        <p class="lead">
            Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.
            <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
-         </p>
-         <!-- social__item instagram -->
-         <div class="social__item">
-           <a target="_blank" href="http://instagram.com/hearthandtimber" class="social__icon--instagram"><i class="icon--instagram"></i></a>
-         </div>
-    </div>
+        </p>
+
+        </div>
 	</div>
 </div>
 
