@@ -113,9 +113,34 @@ require_once( 'includes/nav.php');
 
 		</div>
 		<div class="col-md-4">
+      <h3 class="bottomHeadlines text-center">
+            Contact
+         </h3>
+         <form action="contact.php" class="contactForm" method="post" accept-charset="utf-8">
+         <input type="text" name="name" value="" placeholder="Your Name" />
+         <input type="text" name="email" value="" placeholder="Your Email" />
+         <label class="guestLabel" for="numGuests">Guests</label>
+         <select class="select" name="numGuests" id="numGuests">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="moreThan4">More than 4</option>
+         </select>
+         <textarea name="contactFormText" id="contactFormText" rows="8" cols="40"></textarea>
+         <input type="submit" name="submit" value="Submit form"  />
+       </form>
+       <div class="messageSuccess">
+       </div>
 			<h3 class="bottomHeadlines text-center">
-            About/Contact
-         </h3> </div>
+            About
+         </h3>
+         <p>
+           Aunt Bugs Cabin Rentals offers the perfect Tennessee Vacation Cabin Rentals in various Great Smoky Mountain areas. Whether you are looking for a Pigeon Forge Cabin Rental, a Gatlinburg Cabin Rental or Smoky Mountain Cabin Rental, with a spectacular mountain view or view of the Little Pigeon River, Aunt Bug's Cabin Rentals offers affordable deluxe cabins to suit your family's needs and vacation budget.
+
+We are a family owned company that started the cabin rental company after many visits to Gatlinburg. The Smoky Mountain Tennessee area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
+         </p>
+    </div>
 	</div>
 </div>
 
