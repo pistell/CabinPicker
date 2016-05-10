@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
+
 body.cabins .row {
     margin-bottom: 25px;
 }
@@ -15,6 +16,9 @@ body.cabins h2 {
 .datepicker {
     width: 100% !important;
     height: 165px !important;
+}
+.carousel img {
+    min-width: 100%;
 }
 .eventDate {
     background: #a21d4d;
@@ -99,7 +103,14 @@ div.showImage input {
     -webkit-font-smoothing: antialiased;
 }
 
-/*Stupid pure CSS social Icons, Replace with font awesome*/
+#footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    color: #777;
+    border-top: 1px solid #e7e7e7;
+}
+
+/* Stupid pure CSS social Icons, Replace with font awesome */
 
 .icon--instagram::before {
     content: "";
@@ -113,6 +124,7 @@ div.showImage input {
 .social__item {
     display: inline-block;
     margin-right: 0.1em;
+    margin: 0 0 20px;
 }
 .icon, [class^="icon--"] {
     font-family: 'entypo';
