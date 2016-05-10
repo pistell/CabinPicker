@@ -7,8 +7,10 @@
 <footer id="footer">
     <div class="container-fluid text-center">
 
+        <img src="img/axe-light.png" alt="axe logo" id="footer-logo">
+
         <div class="social__item">
-          <a target="_blank" href="http://instagram.com/hearthandtimber" class="social__icon--instagram"><i class="icon--instagram"></i></a>
+            <a target="_blank" href="http://instagram.com/hearthandtimber" class="social__icon--instagram"><i class="icon--instagram"></i></a>
         </div>
 
         <p class="text-center">Site by James Pistell</p>
