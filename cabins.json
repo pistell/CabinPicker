@@ -5,20 +5,26 @@
         "name": "North Woods",
         "description": "I go to Saudi Arabia, I go to Dubai; I am doing big jobs in Dubai. I go to various different places. I go to China. They are building a bridge on every corner. They have bridges that make the George Washington Bridge like small time stuff. They're building the most incredible things you have ever seen. They are building airports in Qatar--which they like to say cutter but I've always said qatar so I'll keep it qatar what the hell.",
         "image": "cabin1.png",
-        "price": "199"
+        "price": "199",
+        "location": "Newry, ME",
+        "vacancy": "Available"
     },
     {
         "id": "2",
         "name": "Maple Harbor",
         "description": "So what I'd say is the following, I don't want you to do that. And if you do it, you're not going to have any cars coming across the border unless you pay 35 percent tax. That's it. No, that's it. And they are going to say, they are going to say to me, Mr. President, please, please, please. Now, I guarantee you, let's say I make this call at 9:00 in the morning. By 5:00 in the afternoon I think the deal is done, they move back to the United States. It may take a half a day longer. May be 12:00 the following day, but I guarantee you, so they will -- what will happen is I'll be called by lobbyists but not giving me money. I won't take it.",
         "image": "cabin2.png",
-        "price": "249"
+        "price": "249",
+        "location": "Burlington, VT",
+        "vacancy": "Available"
     },
     {
         "id": "3",
         "name": "Little Pond",
         "description": "I mean I've made so much money fighting against the Chinese. One of the best deals I ever did was against the Chinese, and they respect me for it. And I know them. And they say, we can't believe what we're getting away with. We can't believe how stupid your leaders are. They tell me that. Now they don't know I'm going to go and make a speech about it, but why not. But they tell me that.",
         "image": "cabin3.png",
-        "price": "299"
+        "price": "299",
+        "location": "Nashua, NH",
+        "vacancy": "Available"
     }
 ]}

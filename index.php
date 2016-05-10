@@ -11,46 +11,28 @@ require_once( 'includes/nav.php');
 			<!-- Include the cabin carousel -->
 			<?php require_once( 'includes/carousel.php'); ?> </div>
 		<div class="col-md-4">
-			<table class="table table-hover">
+			<table class="table table-hover table-striped">
 				<thead>
 					<tr>
-						<th> # </th>
-						<th> Product </th>
-						<th> Payment Taken </th>
-						<th> Status </th>
+						<th> Cabin </th>
+						<th> Price Per Night </th>
+						<th> Vacancy </th>
+						<th> Location </th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td> 1 </td>
-						<td> TB - Monthly </td>
-						<td> 01/04/2012 </td>
-						<td> Default </td>
-					</tr>
-					<tr class="active">
-						<td> 1 </td>
-						<td> TB - Monthly </td>
-						<td> 01/04/2012 </td>
-						<td> Approved </td>
-					</tr>
-					<tr class="success">
-						<td> 2 </td>
-						<td> TB - Monthly </td>
-						<td> 02/04/2012 </td>
-						<td> Declined </td>
-					</tr>
-					<tr class="warning">
-						<td> 3 </td>
-						<td> TB - Monthly </td>
-						<td> 03/04/2012 </td>
-						<td> Pending </td>
-					</tr>
-					<tr class="danger">
-						<td> 4 </td>
-						<td> TB - Monthly </td>
-						<td> 04/04/2012 </td>
-						<td> Call in to confirm </td>
-					</tr>
+				<tbody >
+          <?php foreach (get_cabin_data()->cabins as $cabin): // loop through cabins in json file ?>
+          <tr class="active ">
+            <!-- Add hyperlink to each cabin name -->
+            <td><a href="reservations.php?cabin=<?php echo $cabin->id; ?>"> <?php echo $cabin->name; ?></a> </td>
+            <!-- Get cabin price from JSON -->
+            <td>$<?php echo $cabin->price; ?> </td>
+            <!--If JSON file vacancy key equals "Available" set td class to success, else set to danger-->
+            <td <?php if ($cabin->vacancy === "Available") { echo "class='success'"; } else { echo "class='danger'"; } ?>> <?php echo $cabin->vacancy; ?> </td>
+            <!-- Get cabin location from JSON -->
+            <td > <?php echo $cabin->location; ?> </td>
+          </tr>
+          <?php endforeach; ?>
 				</tbody>
 			</table>
 		</div>
@@ -62,7 +44,7 @@ require_once( 'includes/nav.php');
          </h3> </div>
 		<div class="col-md-4">
 			<h3>
-            h3. Lorem ipsum dolor sit amet.
+            Vacation Packages
          </h3>
 			<div class="row">
 				<div class="col-md-4">
@@ -102,8 +84,9 @@ require_once( 'includes/nav.php');
 		</div>
 		<div class="col-md-4">
 			<h3>
-            h3. Lorem ipsum dolor sit amet.
+            About/Contact
          </h3> </div>
 	</div>
 </div>
+
 <?php require_once( 'includes/footer.php'); ?>
