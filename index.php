@@ -135,11 +135,14 @@ require_once( 'includes/nav.php');
 			<h3 class="bottomHeadlines text-center">
             About
          </h3>
-         <p>
-           Aunt Bugs Cabin Rentals offers the perfect Tennessee Vacation Cabin Rentals in various Great Smoky Mountain areas. Whether you are looking for a Pigeon Forge Cabin Rental, a Gatlinburg Cabin Rental or Smoky Mountain Cabin Rental, with a spectacular mountain view or view of the Little Pigeon River, Aunt Bug's Cabin Rentals offers affordable deluxe cabins to suit your family's needs and vacation budget.
-
-We are a family owned company that started the cabin rental company after many visits to Gatlinburg. The Smoky Mountain Tennessee area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
+         <p class="lead">
+           Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.
+           <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
          </p>
+         <!-- social__item instagram -->
+         <div class="social__item">
+           <a target="_blank" href="http://instagram.com/hearthandtimber" class="social__icon--instagram"><i class="icon--instagram"></i></a>
+         </div>
     </div>
 	</div>
 </div>
