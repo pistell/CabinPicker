@@ -17,8 +17,11 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="/">Hearth &amp; Timber Cabin Co.</a>
-
+            <a class="navbar-brand" href="/">
+                <img src="img/axe-light.png" alt="axe logo" id="nav-logo">
+                Hearth &amp; Timber Cabin Co.
+            </a>
+            
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
