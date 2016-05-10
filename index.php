@@ -39,16 +39,37 @@ require_once( 'includes/nav.php');
 	</div>
 	<div class="row">
 		<div class="col-md-4">
-			<h3>
-            h3. Lorem ipsum dolor sit amet.
-         </h3> </div>
+
+         <!--LOCAL EVENTS-->
+         <h3 class="bottomHeadlines text-center">Upcoming Local Events</h3>
+
+         <div class="events">
+
+           <!-- Get the current date and add 3 days -->
+         	<h4 class="eventDate text-center"><span><?php echo date("F j, Y", strtotime("+3 days"));?></span></h4>
+
+          <div class="showImage">
+            <img class="img-fluid event-img" alt="The Nashua Chorus of New England" src="img/orchestra.jpg" />
+            <!-- Opens a new tab, not needed in this assignment -->
+            <input type="button" class="hoverButton btn btn-primary" onclick="window.open('http://google.com','_blank')" value="Discover">
+          </div>
+
+
+         </div>
+         <h4 class="eventTitle text-justify">63rd Annual Show</h4>
+         <p class="lead"> Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small> </p>
+         <!--END LOCAL EVENTS -->
+
+
+
+     </div>
 		<div class="col-md-4">
-			<h3>
+			<h3 class="bottomHeadlines text-center">
             Vacation Packages
          </h3>
 			<div class="row">
 				<div class="col-md-4">
-					<div class="thumbnail"> <img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/output/people-q-c-600-200-1.jpg" />
+					<div class="thumbnail"> <img alt="Bootstrap Thumbnail First" src="http://lorempixel.com/g/200/200/" />
 						<div class="caption">
 							<h3>
                         Thumbnail label
@@ -59,7 +80,7 @@ require_once( 'includes/nav.php');
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="thumbnail"> <img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/output/city-q-c-600-200-1.jpg" />
+					<div class="thumbnail"> <img alt="Bootstrap Thumbnail Second" src="http://lorempixel.com/g/200/200/" />
 						<div class="caption">
 							<h3>
                         Thumbnail label
@@ -70,7 +91,7 @@ require_once( 'includes/nav.php');
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="thumbnail"> <img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/output/sports-q-c-600-200-1.jpg" />
+					<div class="thumbnail"> <img alt="Bootstrap Thumbnail Third" src="http://lorempixel.com/g/200/200/" />
 						<div class="caption">
 							<h3>
                         Thumbnail label
@@ -83,7 +104,7 @@ require_once( 'includes/nav.php');
 			</div>
 		</div>
 		<div class="col-md-4">
-			<h3>
+			<h3 class="bottomHeadlines text-center">
             About/Contact
          </h3> </div>
 	</div>

@@ -18,8 +18,7 @@
     $(document).ready(function() {
         //Using $.ajax instead of $.getJSON for better error handling
         $.ajax({
-            //Remember to change the URL on production 
-            url: 'http://cabin.dev/cabins.json',
+            url: window.location.href + 'cabins.json',
             dataType: 'json',
             type: 'get',
             cache: false,
@@ -44,7 +43,6 @@
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 alert("Status: " + textStatus);
                 alert("Error: " + errorThrown);
-                console.log("Did you remember to change the AJAX URL on production?");
             }
         });
     });

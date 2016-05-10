@@ -4,7 +4,7 @@
  */
 
 function get_cabin_data() {
-    
+
     // Get JSON file contents
     $cabinDataString = file_get_contents("cabins.json");
 
