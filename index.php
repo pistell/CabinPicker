@@ -78,12 +78,8 @@ require_once( 'includes/nav.php');
         </div>
 		<div class="col-md-4">
 
-            <h3 class="bottomHeadlines text-center">About</h3>
-
-            <p class="lead">
-               Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.
-               <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
-            </p>
+        <h3 class="bottomHeadlines text-center">Cabins</h3>
+        <?php require_once( 'includes/carousel.php'); ?>
 
 		</div>
         <div class="col-md-4">
@@ -183,8 +179,11 @@ require_once( 'includes/nav.php');
 
     	</div><!--column -->
         <div class="col-md-4">
-            <h3 class="bottomHeadlines text-center">Cabins</h3>
-            <?php require_once( 'includes/carousel.php'); ?>
+          <h3 class="bottomHeadlines text-center">About</h3>
+          <p class="lead">
+             Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.
+             <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
+          </p>
         </div>
 	</div>
 </div>

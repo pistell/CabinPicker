@@ -109,29 +109,29 @@ $( document ).ready(function() {
         }
     });
 
-  //Contact form AJAX
-  //Hacked from: https://jonsuh.com/blog/jquery-ajax-call-to-php-script-with-json-return/
-  $(".contactForm").submit(function(){
-  var data = {
-    "action": "test"
-  };
-  data = $(this).serialize() + "&" + $.param(data);
-  $.ajax({
-    type: "POST",
-    dataType: "json",
-    url: "includes/contact.php",
-    data: data,
-    success: function(data) {
-      var contactName = data["name"];
-      var contactEmail = data["email"];
-      var contactGuests = data["numGuests"];
-      var contactText = data["contactFormText"];
-      $(".messageSuccess").html("<pre>Name: " + contactName + "<br />Email: " + contactEmail + "<br />Guests: " + contactGuests + "<br />Message: " + contactText + "</pre>");
-      $(".messageSuccess").append("<p><strong>Data successfully posted via AJAX</strong></p>");
-    }
-  });
-  return false;
-  });
+    //Contact form AJAX
+    //Hacked from: https://jonsuh.com/blog/jquery-ajax-call-to-php-script-with-json-return/
+    $(".contactForm").submit(function(){
+    var data = {
+      "action": "test"
+    };
+    data = $(this).serialize() + "&" + $.param(data);
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      url: "includes/contact.php",
+      data: data,
+      success: function(data) {
+        var contactName = data["name"];
+        var contactEmail = data["email"];
+        var contactGuests = data["numGuests"];
+        var contactText = data["contactFormText"];
+        $(".messageSuccess").html("<pre>Name: " + contactName + "<br />Email: " + contactEmail + "<br />Guests: " + contactGuests + "<br />Message: " + contactText + "</pre>");
+        $(".messageSuccess").append("<p><strong>Data successfully posted via AJAX</strong></p>");
+      }
+    });
+    return false;
+    });
 
     // Gets url parameters - http://stackoverflow.com/questions/29549309
     function getParameterByName(name) {
