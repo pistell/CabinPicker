@@ -45,6 +45,7 @@ body.cabins h2 {
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     background-color: #84183F;
+    color: #FFF;
 }
 .btn-primary {
     background-color: #A21D4D;
