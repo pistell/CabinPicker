@@ -133,6 +133,7 @@ $(document).ready(function () {
         return false;
     });
     // Gets url parameters - http://stackoverflow.com/questions/29549309
+    // Grab part of URL string and make it display as text in HTML 
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
