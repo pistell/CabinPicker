@@ -10,7 +10,7 @@ require_once('functions.php');
 <head>
     <meta charset="utf-8">
     <meta name="description" content="<?php print_r($descToEcho); ?>">
-    <!-- Quotation marks removed due to json_encode printing them -->
+    <!-- Quotation marks removed in HTML file due to json_encode printing them -->
     <meta name="keywords" content=<?php echo json_encode($keywordsToEcho); ?>>
     <meta name="author" content="James Pistell">
     <!-- Capitalize the first letter of the $basename var from get_active_page() -->
