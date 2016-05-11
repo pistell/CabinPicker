@@ -14,7 +14,7 @@ require_once('functions.php');
     <meta name="keywords" content=<?php echo json_encode($keywordsToEcho); ?>>
     <meta name="author" content="James Pistell">
     <!-- Capitalize the first letter of the $basename var from get_active_page() -->
-    <title><?php echo ucfirst(get_active_page($basename)); ?> | Hearth and Timber Co.</title>
+    <title><?php echo ucfirst(get_active_page()); ?> | Hearth and Timber Co.</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css">
     <link rel="stylesheet" media="screen" type="text/css" href="css/main.css">
