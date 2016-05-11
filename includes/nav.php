@@ -37,6 +37,10 @@
                     <li class="<?= ($active_page == 'home') ? 'active':''; ?>"><a href="/">Home</a></li>
                     <li class="<?= ($active_page == 'cabins') ? 'active':''; ?>"><a href="cabins.php">Cabins</a></li>
                     <li class="<?= ($active_page == 'reservations') ? 'active':''; ?>"><a href="reservations.php">Reservations</a></li>
+                    <!-- Pages not added, filler content -->
+                    <li><a href="#">Local Events</a></li>
+                    <li><a href="#">Vacation Packages</a></li>
+                    <li><a href="#">Contact</a></li>
             </ul>
 
         </div>

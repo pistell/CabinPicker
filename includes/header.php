@@ -9,7 +9,8 @@ require_once('functions.php');
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <!-- Capitalize the first letter of the $basename var from get_active_page() -->
+    <title><?php echo ucfirst(get_active_page($basename)); ?> | Hearth and Timber Co.</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" media="screen" type="text/css" href="css/datepicker.css">
     <link rel="stylesheet" media="screen" type="text/css" href="css/main.css">
