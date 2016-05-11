@@ -45,5 +45,11 @@
                 alert("Error: " + errorThrown);
             }
         });
+        //Automatically start the carousel on page load 
+        $(document).ready(function() {
+           $('#myCarousel').carousel({
+             interval: 3500
+        })
+      });
     });
 </script>

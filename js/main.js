@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
     var to = new Date();
     var from = new Date(to.getTime() - 1000 * 60 * 60 * 24 * 14);
@@ -79,9 +79,9 @@ $( document ).ready(function() {
         date: [from, to],
         calendars: 3,
         mode: 'range',
-        current: new Date(to.getFullYear(), to.getMonth() - 1, 1),
+        //current: new Date(to.getFullYear(), to.getMonth() - 1, 1),
+        current: new Date(),
         onChange: function(dates, el) {
-
             //display date range for user in readonly input
             $('#date-range-field').attr("placeholder",
                 dates[0].getDate() + ' ' + dates[0].getMonthName(true) + ', ' +

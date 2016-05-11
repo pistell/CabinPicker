@@ -19,7 +19,8 @@ require_once( 'includes/nav.php');
 <div class="container-fluid">
 	<div class="row">
 
-        <div class="col-md-4">
+        <!-- built in Bootstrap class hidden-print hides the element in print mode -->
+        <div class="col-md-4 hidden-print ">
 
             <h3 class="bottomHeadlines text-center">Contact</h3>
             <form class="form-horizontal contactForm" action="contact.php" method="post" accept-charset="utf-8">
@@ -79,7 +80,7 @@ require_once( 'includes/nav.php');
 		<div class="col-md-4">
 
         <h3 class="bottomHeadlines text-center">Cabins</h3>
-        <?php require_once( 'includes/carousel.php'); ?>
+        <?php require_once('includes/carousel.php'); ?>
 
 		</div>
         <div class="col-md-4">
@@ -124,7 +125,7 @@ require_once( 'includes/nav.php');
             <div class="showImage">
                 <img class="img-fluid event-img" alt="The Nashua Chorus of New England" src="img/orchestra.jpg" />
                 <!-- Opens a new tab, not needed in this assignment -->
-                <input type="button" class="hoverButton btn btn-primary" value="Discover">
+                <input type="button" class="hoverButton btn btn-primary hidden-print" value="Discover">
             </div>
             </div>
 
@@ -138,7 +139,7 @@ require_once( 'includes/nav.php');
             <div class="showImage">
                 <img class="img-fluid event-img" alt="Louis Barthas International Photography Exhibit" src="img/photography.jpg" />
                 <!-- Opens a new tab, not needed in this assignment -->
-                <input type="button" class="hoverButton btn btn-primary" value="Discover">
+                <input type="button" class="hoverButton btn btn-primary hidden-print" value="Discover">
             </div>
             </div>
 
@@ -156,7 +157,7 @@ require_once( 'includes/nav.php');
                 <div class="showImage">
                     <img class="img-fluid event-img" alt="Hearth and Timber Wine Tour Package" src="img/wine.jpg" />
                     <!-- Opens a new tab, not needed in this assignment -->
-                    <input type="button" class="hoverButton btn btn-primary" value="Discover">
+                    <input type="button" class="hoverButton btn btn-primary hidden-print" value="Discover">
                 </div>
             </div>
 
@@ -170,7 +171,7 @@ require_once( 'includes/nav.php');
                 <div class="showImage">
                     <img class="img-fluid event-img" alt="Hearth and Timber Executive Retreats" src="img/corporate.jpg" />
                     <!-- Opens a new tab, not needed in this assignment -->
-                    <input type="button" class="hoverButton btn btn-primary" value="Discover">
+                    <input type="button" class="hoverButton btn btn-primary hidden-print" value="Discover">
                 </div>
             </div>
 
@@ -181,9 +182,11 @@ require_once( 'includes/nav.php');
         <div class="col-md-4">
           <h3 class="bottomHeadlines text-center">About</h3>
           <p class="lead">
-             Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.
-             <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests.
+             Hearth and Timber Cabin Co. offers the perfect <em>New England Vacation Cabin Rentals</em> in various regional states. Whether you are looking for a White Mountains Cabin Rental, a rustic cabin rental or a secluded cabin rental, with a spectacular mountain view or view of the White Mountains, Hearth and Timber Cabin Co. offers affordable deluxe cabins to suit your family's needs and vacation budget.<br/>
+             <img src="img/family.jpg" alt="Some random stock image of 'family business'" class="center-block" /><br/>
+             <strong>We are a family owned company</strong> that started the cabin rental company after many visits to New England. The White Mountains area is a beautiful place and we love to share the area’s natural beauty with all of our guests. Reserve your cabin today and discover the natural beauty of this region with us.<br/>
           </p>
+
         </div>
 	</div>
 </div>

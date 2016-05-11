@@ -19,7 +19,7 @@ require_once('includes/nav.php');
         </div>
         <div class="col-sm-8">
             <h2><?php echo $cabin->name; ?></h2>
-            <p class="lead">Price: $<?php echo $cabin->price; ?>/Night</p>
+            <h4>Price: $<?php echo $cabin->price; ?>/Night</h4>
             <p><?php echo $cabin->description; ?></p>
             <a class="btn btn-primary" href="reservations.php?cabin=<?php echo $cabin->id; ?>">Make A Reservation</a>
         </div>
