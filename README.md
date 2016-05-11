@@ -18,9 +18,9 @@ James Pistell
 - [x] Clean up contact form
 - [x] Add more footer info
 - [x] tag on cabins.php is not supposed to be drop caps
-- [ ] Calendar on reservations.php stars back in time, have it start on the current day
-- [ ] check boxes on reservations.php needs to be functional
-- [ ] Add in dollar sign and comma for total cost input box on reservations.php
+- [x] Calendar on reservations.php stars back in time, have it start on the current day
+- [x] check boxes on reservations.php needs to be functional
+- [x] Add in dollar sign and comma for total cost input box on reservations.php
 - [ ] Cabin descriptions in cabins.json needs actual data, not donald trump ipsum
 - [ ] Maybe add in a Google Maps API below the price box on the home page with pins in each location for each cabin (idk just thinking out loud here)
 - [ ] Add more filler text in About section to even out the page

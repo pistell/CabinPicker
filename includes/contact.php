@@ -13,11 +13,6 @@ function is_ajax(){
 }
 function test_function(){
   $return = $_POST;
-//Do what you need to do with the info. The following are some examples.
-//if ($return["favorite_beverage"] == ""){
-// $return["favorite_beverage"] = "Coke";
-//}
-//$return["favorite_restaurant"] = "McDonald's";
   $return["json"] = json_encode($return);
   echo json_encode($return);
 }

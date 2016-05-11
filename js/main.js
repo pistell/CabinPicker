@@ -57,9 +57,13 @@ $(document).ready(function() {
         $("#numberOfNights").attr("placeholder", totalNights);
         console.log('Total Nights:', totalNights);
         console.log('Cost Per Night:', '$' + cabinCostPerDay);
-        $("#totalCost").attr("placeholder", totalNights * cabinCostPerDay);
+        //$("#totalCost").attr("placeholder", totalNights * cabinCostPerDay);
+        //Using .val() to prepend a dollar symbol to the input field
+        $("#totalCost").val("$" + totalNights * cabinCostPerDay);
         console.log('Total Cost:', '$' + totalNights * cabinCostPerDay +'\n\n');
     }
+
+
 
     // Cabin Select
     $('#cabinSelect').on('change', function(){
@@ -132,6 +136,66 @@ $(document).ready(function() {
     });
     return false;
     });
+
+    //Reservations form submit
+    $(".reservationForm").submit(function(){
+    var data = {
+      "action": "test"
+    };
+    data = $(this).serialize() + "&" + $.param(data);
+    $.ajax({
+      type: "POST",
+      dataType: "json",
+      url: "includes/contact.php",
+      data: data,
+      success: function(data) {
+        var successCabinSelet = $('#cabinSelect :selected').text();
+        var successDateRange = $("#date-range-field").attr('placeholder');
+        var successNumberOfNights = $("#numberOfNights").attr('placeholder');
+        var successTotalCost = $("#totalCost").val();
+        $(".messageSuccess").html("<pre>Cabin Selected: " + successCabinSelet + "<br />Dates: " + successDateRange + "<br />Nights: " + successNumberOfNights + "<br />Total Cost: " + successTotalCost);
+        $(".messageSuccess").append("<p><strong>Data successfully posted via AJAX</strong></p>");
+      }
+    });
+    return false;
+    });
+
+    //Front page carousel AJAX 
+    //Using $.ajax instead of $.getJSON for better error handling
+    $.ajax({
+        url: window.location.href + 'cabins.json',
+        dataType: 'json',
+        type: 'get',
+        cache: false,
+        success: function(data) {
+            $(data.cabins).each(function(index, value) {
+                //Set var for the cabin image
+                var cabinImage = '<img src="img/' + value.image + '"/>';
+                //Set var for the cabin name
+                var cabinName = '<div class="carousel-caption"><h4>' + value.name + '</h4>';
+                //Set var for the cabin descriptions
+                var cabinDesc = value.description;
+                //Set var for truncated cabin description
+                var shortCabinDesc = $.trim(cabinDesc).substring(0, 100).split(" ").slice(0, -1).join(" ") + "...";
+                //Set first item class to active or else the carousel won't load
+                $('#myCarousel').find('.item').first().addClass('active');
+                //Load the carousel item indicator buttons
+                $(".carousel-indicators").append($('<li data-target="#myCarousel" data-slide-to="' + index + '"</li>'));
+                //Load the cabin images, names and descriptions
+                $(".carousel-inner").append($('<div class="item">' + cabinImage + cabinName + shortCabinDesc + '</div>'));
+            });
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("Status: " + textStatus);
+            alert("Error: " + errorThrown);
+        }
+    });
+    //Automatically start the carousel on page load
+    $(document).ready(function() {
+       $('#myCarousel').carousel({
+         interval: 3500
+    })
+  });
 
     // Gets url parameters - http://stackoverflow.com/questions/29549309
     function getParameterByName(name) {
