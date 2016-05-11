@@ -1,7 +1,7 @@
 <?php
 /*
- * Our Reservations Page
- */
+* Our Reservations Page
+*/
 require_once 'includes/header.php';
 require_once 'includes/nav.php';
 
@@ -16,10 +16,10 @@ require_once 'includes/nav.php';
                 <div class="form-group">
                     <label class="control-label" for="cabinSelect">Choose Cabin</label>
                     <select class="select form-control" id="cabinSelect" name="select">
-                    <?php foreach (get_cabin_data()->cabins as $cabin): // loop through cabins in json file ?>
-                        <option value="<?php echo $cabin->id; ?>"><?php echo $cabin->name; ?> - $<?php echo $cabin->price; ?>/Night</option>
-                    <?php endforeach; ?>
-                    </select>
+                <?php foreach (get_cabin_data()->cabins as $cabin): // loop through cabins in json file ?>
+                    <option value="<?php echo $cabin->id; ?>"><?php echo $cabin->name; ?> - $<?php echo $cabin->price; ?>/Night</option>
+                <?php endforeach; ?>
+                </select>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="date-range-field">Date Range</label>
@@ -51,12 +51,16 @@ require_once 'includes/nav.php';
                     <button class="btn btn-success btn-lg" name="submit" type="submit">Submit</button>
                 </div>
             </form>
-        </div><!--column-->
+        </div>
+        <!--column-->
         <div class="col-sm-5">
             <img id="cabinPreview" src="img/cabin1.png" class="img-responsive" alt="Cabin 1">
             <div class="messageSuccess"></div>
-        </div><!--column-->
-    </div><!--row-->
-</div><!--container-->
+        </div>
+        <!--column-->
+    </div>
+    <!--row-->
+</div>
+<!--container-->
 
 <?php require_once 'includes/footer.php'; ?>

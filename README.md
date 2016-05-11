@@ -10,23 +10,13 @@ James Pistell
 + [jQuery](https://jquery.com)
 + [Bootstrap 3](http://getbootstrap.com)
 
-## To Do
+## About
 
-- [x] Add font-awesome, remove CSS social icon
-- [x] Clean up nav bar, add social icon
-- [x] clean up jQuery carousel
-- [x] Clean up contact form
-- [x] Add more footer info
-- [x] tag on cabins.php is not supposed to be drop caps
-- [x] Calendar on reservations.php stars back in time, have it start on the current day
-- [x] check boxes on reservations.php needs to be functional
-- [x] Add in dollar sign and comma for total cost input box on reservations.php
-- [ ] Cabin descriptions in cabins.json needs actual data, not donald trump ipsum
-- [ ] Maybe add in a Google Maps API below the price box on the home page with pins in each location for each cabin (idk just thinking out loud here)
-- [ ] Add more filler text in About section to even out the page
-- [ ] Maybe write a half decent readme.md file
+This is a final project I did for class. It is a fake cabin rental company. The cabins are entered into a JSON file and populated throughout the site. If I had to do this again I wouldn't use the DatePicker from FoxRun as it has not been updated in over 4 years. jQuery UI has a built in date picker with much better documentation.
 
-Last steps:
-- [ ] Beautify files
-- [ ] Validate CSS and HTML
-- [ ] Write report
+## Things to improve on
+- Use jquery.ui.datepicker
+- Form validation on Contact form and Reservation form
+- Cabin availability key in JSON file has limited functionality
+- Display dates when cabins are booked
+- Add a display page for each cabin to show off more pics and details, not a link to the reservations page   

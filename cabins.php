@@ -1,7 +1,7 @@
 <?php
 /*
- * Our Cabins Page
- */
+* Our Cabins Page
+*/
 require_once('includes/header.php');
 require_once('includes/nav.php');
 
@@ -20,7 +20,9 @@ require_once('includes/nav.php');
         <div class="col-sm-8">
             <h2><?php echo $cabin->name; ?></h2>
             <h4>Price: $<?php echo $cabin->price; ?>/Night</h4>
-            <p><?php echo $cabin->description; ?></p>
+            <p>
+                <?php echo $cabin->description; ?>
+            </p>
             <a class="btn btn-primary" href="reservations.php?cabin=<?php echo $cabin->id; ?>">Make A Reservation</a>
         </div>
     </div>
